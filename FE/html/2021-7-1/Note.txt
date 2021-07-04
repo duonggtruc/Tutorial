@@ -40,3 +40,6 @@ h1{
 rem phụ thuộc vào thẻ html
 em phụ thuộc vào thẻ gần nhất chứ font-size
 --16--
+calc(): có thể tính
+
+attr(): lấy giá trị trong attribute
