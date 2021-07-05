@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preudo-elements</title>
+    <style>
+        .box{
+            background-color: rgb(161, 51, 88);
+            height:120px;
+            width: 100vw;
+        }
+
+        .box::before{
+            content:"hello";
+            display: block;
+            color:burlywood;
+            height:50px;
+            width:50px;
+            background-color:black;
+
+        }
+        .box::after{
+            content:""; /* không thể thiếu giúp cái element giả tồn tại*/
+            display: block;
+            height:50px;
+            width:50px;
+            background-color:white;
+
+        }
+        h1::first-letter{
+            font-size: 50px;
+        }
+        ::selection{
+            background-color:rgb(195, 130, 238);
+            color: rgb(49, 6, 6);
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <div class="box"></div>
+        <div class="main">
+            <h1>Pseudo-elements</h1>
+            <ul>
+                <li>::before</li>
+                <li>::after</li>
+                <li>::first-letter</li>
+                <li>::first-line</li>
+                <li>::selection</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

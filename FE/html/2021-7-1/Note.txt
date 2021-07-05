@@ -2,15 +2,18 @@
 network thể hiện mấy cái tải về (Nguồn tài nguyên ra vào)
 Sources để quản lý web đang xử lí nguồn tài nguyên nào
 Element xem các thẻ html
+
 --5--
 DOCTYPE định nghĩa loại tài liệu 
 (document type)
 
 index là code cho file trang chủ
+
 --9--
 attribute là thuộc tính của thẻ 
 
 ex: <h1 type="...."> (attribute là type )
+
 --10--
 có 3 cách sử dụng CSS:
 
@@ -19,27 +22,57 @@ có 3 cách sử dụng CSS:
 2. External (sử dụng file bên ngoài) : bến ngoài
 
 3. Inline (sử dụng attribute style) : nội tuyến
+
 --13--
 inline>id>class>tag>Universal selector=inherited
+
 --14--
-root{
+:root{
 --tên: kiểu;
 }
 
 Ex:
 
-root{
+:root{
 	-- text-color:black;
 }
 
 h1{
        color:var( -- text-color )
 }
+
 --15--
 % phụ thuộc vào thẻ chứa nó
 rem phụ thuộc vào thẻ html
 em phụ thuộc vào thẻ gần nhất chứ font-size
+
 --16--
 calc(): có thể tính
-
 attr(): lấy giá trị trong attribute
+
+--17--
+Pseudo-class: lớp giả
+
+:root tham chiếu tới phần tử gốc
+:hover kích hoạt khi di chuột vào
+:active bấm thì kích hoạt
+:first-child: select đứa con đầu tiên
+:last-child: select đứa con cuối cùng
+
+Ex: li là đứa con
+<ul>
+
+     <li>
+
+     <li>
+
+     <li>
+
+</ul>
+
+--18--
+::first-letter : chọn kí tự đầu tiên
+
+::first-line : dòng đầu tiên
+
+::selection bôi đen 
