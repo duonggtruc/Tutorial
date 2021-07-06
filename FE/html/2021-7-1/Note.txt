@@ -76,3 +76,9 @@ Ex: li là đứa con
 ::first-line : dòng đầu tiên
 
 ::selection bôi đen 
+
+--19.20--
+border+padding laàm tăng kích thước
+
+--21--
+margin làm tăng khoảng cách không ảnh hưởng đến kích thước
