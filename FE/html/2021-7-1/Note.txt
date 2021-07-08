@@ -82,3 +82,8 @@ border+padding laàm tăng kích thước
 
 --21--
 margin làm tăng khoảng cách không ảnh hưởng đến kích thước
+
+--23--
+background-clip sẽ quyết định việc đổ màu background ở ranh giới nào
+
+mặc định là border-box
