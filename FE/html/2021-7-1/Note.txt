@@ -83,7 +83,43 @@ border+padding laàm tăng kích thước
 --21--
 margin làm tăng khoảng cách không ảnh hưởng đến kích thước
 
+--22--
+box-sizing: border-box tổng kích thước bằng chúng ta khai báo.
+
 --23--
 background-clip sẽ quyết định việc đổ màu background ở ranh giới nào
-
 mặc định là border-box
+
+--24--
+muốn để background nhiều hình ảnh thì dùng: background-image: url(),url(); 
+/* ảnh nào viết trước hiển thị lên trên*/
+background-repeat: no-repeat; /* để không lập ảnh */
+linear-gradient(90deg,#333,#ccc) 
+/* tạo dảy màu chuyển */
+chuyển từ màu #333 thành #ccc góc 90 
+dùng màu rgba(a,b,c,d) để chuyển màu trong suốt(tức là thấy background)
+
+--25--
+contain: cố gắng lấy chiều dài nhứt có thể phải đảm bảo không bị che khuất hay bị cắt xén
+cover: lấy cạnh dài hơn của bức ảnh sẽ bị che khuất và không để hở khoảng trắng
+
+--26--
+background-origin tương tự như background-clip nhưng dungf cho image
+maặc định là padding box
+
+---Tổng kết background---
+background-clip(Áp dụng nền màu)
+
+background-origin(Áp dụng nền ảnh)
+
+background-size(Ảnh được làm nền lấy kích thước thực của nó)
+
+background-position(Quy định vị trí của ảnh so với nền,đa số chỉ dùng trong trường hợp ảnh nhỏ hơn nền)
+
+background-image(Sử dụng hình ảnh tùy thích. Theo mặc định nếu ảnh nhỏ hơn nền thì nó sẽ lặp lại (repeat) theo cả hai chiều cho đến khi lấp đầy nền thì thôi)
+
+background-repeat(Dùng cho những ảnh nhỏ hơn nền, hi ảnh nhỏ hơn nền thì theo mặc định nó sẽ lặp lại để lấp đầy khoảng không của background thì mới thôi)
+/*chưa học*/
+background-attachment(Xác định vị trí tương đối của nội dung so với ảnh nền.
+Trường hợp bạn để fixed thì ảnh nền sẽ di chuyển theo nội dung (background-attachment:fixed
+Để dùng thuộc tính background-attachment bạn phải để background-repeat: no-repeat;
