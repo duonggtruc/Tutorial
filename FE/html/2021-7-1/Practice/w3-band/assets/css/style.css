@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-family:Arial, Helvetica, sans-serif;
+}
+#header{
+    height: 46px;
+    background-color: #000;
+}
+#nav li{
+    display:inline-block;
+}
+#nav li a{
+    color:#fff;
+    text-decoration:none;
+    display: inline-block;
+    font-family: "Lato", sans-serif;
+    padding:12px 24px;
+}
+#nav li:hover a{
+    color:#000;
+    background-color: #ccc;
+    height:46px;
+}
+
+#nav .sub-nav{
+    display:none;
+}

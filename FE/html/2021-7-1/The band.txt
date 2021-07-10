@@ -1,0 +1,18 @@
+các bước xây dựng:
+1. Phân tích
+	Thành phần
+	1. header
+	2. slider
+	3. content
+		1. giới thiệu
+		2. tour
+		3. contact
+		4. image
+		5. footer
+	4.footer
+
+
+2. Dựng base (xây móng)
+3. Xây dựng từng phần theo phân tích
+4. Hoàn thiện
+

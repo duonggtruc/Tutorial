@@ -1,0 +1,25 @@
+các bước xây dựng:
+1. Phân tích
+2. Dựng base (xây móng)
+3. Xây dựng từng phần theo phân tích
+4. Hoàn thiện
+
+Thành phần thường gặp:
+1. Header(Đầu trang)
+2. Navigation(Điều hướng)
+3. Banner
+4. Breadcrumb (như map)
+5. Sidebar
+6. Slider
+7. Content(nội dung chính)
+8. Footer
+--nguyên tắt--
+1. từ ngoài vào trong
+2. từ trên xuống dưới 
+3. tổng quan đến chi tiết
+
+-- đặt câu hỏi
+1. vị trí
+2. kích thước(width,heigh)
+3. màu sắc
+4. kiểu dáng(kiểu chữ, hình tròn, vuông,....)
