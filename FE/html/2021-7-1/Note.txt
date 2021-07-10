@@ -123,3 +123,8 @@ background-repeat(Dùng cho những ảnh nhỏ hơn nền, hi ảnh nhỏ hơn 
 background-attachment(Xác định vị trí tương đối của nội dung so với ảnh nền.
 Trường hợp bạn để fixed thì ảnh nền sẽ di chuyển theo nội dung (background-attachment:fixed
 Để dùng thuộc tính background-attachment bạn phải để background-repeat: no-repeat;
+--Position:Thuộc tính vị trí--
+relative : tạo vị trí tương đối lấy vị trí đang đứng làm gốc tọa độ
+Absolute: bám vào thẻ cha có position gần nhứt
+fixed: giữ nguyên header, footer
+sticky:bám dính mà ít khi xài vì nhiều trình duyệt không hỗ trợ
