@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position: Fixed</title>
+    <style>
+        h1{
+            margin-top:100px;
+        }
+        li:nth-of-type(3){
+            color:crimson;
+        }
+        ul{
+            height:2000px;
+        }
+        .header{
+            height:100px;
+            background-color:pink;
+            position:fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            /* dùng left:0 + right:0  thay width: 100%*/
+        }
+        .footer{
+            height: 100px;
+            /* background-color:coral; */
+            background-image: url(https://marketplace.canva.com/EAD2962NKnQ/2/0/800w/canva-rainbow-gradient-pink-and-purple-zoom-virtual-background-98aZLNQxJXg.jpg);
+            background-size: cover;
+            position: fixed;
+            bottom:0;
+            left:0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+    <h1>CSS Position</h1>
+    <ul>
+        <li>Relative</li>
+        <li>Absolute</li>
+        <li>Fixed</li>
+        <li>Sticky</li>
+    </ul>
+    <div class="footer"></div>
+</body>
+</html>
