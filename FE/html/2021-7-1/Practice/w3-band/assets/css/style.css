@@ -6,12 +6,22 @@
 html{
     font-family:Arial, Helvetica, sans-serif;
 }
+#nav{
+    display:inline-block;
+}
 #header{
     height: 46px;
     background-color: #000;
 }
-#nav li{
+#nav > li{
     display:inline-block;
+    
+}
+#nav li{
+    position: relative;
+}
+#nav> li>a{
+    text-transform: uppercase;
 }
 #nav li a{
     color:#fff;
@@ -20,12 +30,40 @@ html{
     font-family: "Lato", sans-serif;
     padding:12px 24px;
 }
-#nav li:hover a{
+#nav .sub-nav li:hover,
+#nav > li:hover >a{
     color:#000;
     background-color: #ccc;
     height:46px;
 }
-
 #nav .sub-nav{
     display:none;
+    position: absolute;
+    min-width: 160px;
+    
+}
+#nav ,.sub-nav{
+    list-style-type: none;
+}
+#nav .sub-nav a{
+    color:#000;
+    padding:12px  16px;
+}
+#nav li:hover .sub-nav{
+    display:block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+}
+.search-btn{
+    float:right;
+    padding: 14px 24px;
+}
+.search-btn:hover{
+    background-color:#f44336;
+}
+.search-icon{
+    color:#fff;
+}
+#slider{
+    height:500px;
+    /* background-color:chocolate; */
 }

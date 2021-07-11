@@ -1,5 +1,6 @@
 các bước xây dựng:
-1. Phân tích
+1. Phân tích -->ok
+
 	Thành phần
 	1. header
 	2. slider
