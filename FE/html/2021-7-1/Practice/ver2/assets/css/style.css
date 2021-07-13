@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#main{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header{
+    background-color: #000;
+    height: 46px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    margin: 0;
+    z-index: 1;
+}
+#nav{
+    display: inline-block;
+}
+#nav, .subnav{
+    list-style-type: none;
+}
+#nav> li{
+    display: inline-block;
+}
+#nav li{
+   
+    position: relative;
+}
+#nav li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 14px 24px;
+    
+}
+#nav > li > a{
+    text-transform: uppercase;
+    color: #fff;
+}
+#nav .subnav a:hover,
+#nav>li:hover>a{
+    background-color: #ccc;
+    color: #000;
+}
+#nav li:hover .subnav{
+    display: block;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+#nav .subnav{
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    min-width: 160px;
+    top:100%;
+    left:0;
+    /* padding: 0 16px; */
+}
+#nav .subnav a{
+    color: #000;
+    display:block;
+    padding:8px 16px ;
+    line-height: 28px;
+}
+.search-btn{
+    float: right;
+    position:relative;
+    right:0;
+    padding: 14px 24px;
+}
+.search-icon{
+    color: #fff;
+}
+.search-btn:hover{
+    background-color: #f44336;
+}
+#main #slider{
+    /* margin-top:46px; */
+    background: url('/assets/image/chicago.jpg') top center/cover no-repeat;
+    padding-top: 50%;
+}
+.text-content{
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 32px;
+}
+.text-heading{
+    font-weight: 500;
+    font-size:24;
+}
+.text-description{
+    margin-top: 25px;
+    font-size: 15;
+}
+#content{
+    height: 5000px;
+}

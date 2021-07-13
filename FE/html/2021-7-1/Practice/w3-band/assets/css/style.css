@@ -4,7 +4,11 @@
     box-sizing: border-box;
 }
 html{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: "Lato", sans-serif;
+  
+}
+.clear{
+    clear: both;
 }
 #nav{
     display:inline-block;
@@ -12,6 +16,10 @@ html{
 #header{
     height: 46px;
     background-color: #000;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 #nav > li{
     display:inline-block;
@@ -40,6 +48,7 @@ html{
     display:none;
     position: absolute;
     min-width: 160px;
+    background-color: #fff;
     
 }
 #nav ,.sub-nav{
@@ -64,6 +73,76 @@ html{
     color:#fff;
 }
 #slider{
-    height:500px;
-    /* background-color:chocolate; */
+    padding-top: 50%;
+    background:url('/assets/img/slider/ny.jpg') top center /cover no-repeat;
+
+}
+#slider .text-content{
+    margin: 46px;
+    color:#fff;
+    width: 100%;
+    text-align:center;
+    position:relative;
+    bottom:48px;
+}
+
+#slider .text-heading{
+    font-weight: 500;
+    font-size: 25px;
+}
+#slider .text-description{
+    margin-top:25px;
+    font-size: 14px;
+   
+}
+
+#content {
+    width: 800px;
+    margin-left: auto;
+    margin-right:auto;
+    
+}
+#content .content-section{
+    text-align: center;
+    padding: 64px 16px;
+}
+#content .section-heading{
+    font-size: 30px;
+    margin: 10px 0;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+#content .section-sub-heading{
+    margin:15px 0px;
+    font-size: 15px;
+    opacity: 0.60;
+    font-style: italic;
+}
+#content .about{
+    box-sizing: inherit;
+    margin: 15px 0px;
+    line-height: 1.5;
+    text-align: justify;
+}
+#content .member-list{
+    padding: 32px 0;
+
+}
+#content .member-item{
+    float: left;
+}
+#content .member-name{
+    margin:15px 0px;
+}
+#content .member-img{
+    width: 60%;
+    border-radius: 4px;
+}
+
+#content-tour{
+    background-color: #000;
+    margin: 0;
+    width: 100%;
+    color:#fff;
 }

@@ -2,7 +2,7 @@ các bước xây dựng:
 1. Phân tích -->ok
 
 	Thành phần
-	1. header
+	1. header -->ok
 	2. slider
 	3. content
 		1. giới thiệu
@@ -16,4 +16,127 @@ các bước xây dựng:
 2. Dựng base (xây móng)
 3. Xây dựng từng phần theo phân tích
 4. Hoàn thiện
+------------------------------------------------------
+/* Reset css */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+
+}
+
+#header {
+height: 46px;
+background-color: #000;
+
+/* cho nó ko bị mất khi lăn bi chuột */
+position: fixed;
+
+/* cho nó bám dính bên trên, và căng ngang left right */
+top: 0;
+left: 0;
+right: 0;
+
+/* thằng header đang nổi lên trên thằng slider */
+}
+
+#nav, .subnav {
+list-style-type: none;
+/*bỏ cái tròn tròn của ul*/
+}
+
+#nav {
+display: inline-block;
+/* ul có tính chất block, nên nó sẽ chiếm hết chiều ngang của thẻ cha chứa nó */
+/* Nội dung đến đâu thì dài đến đó thôi . Tức từ thằng Home ==> More mà thôi */
+}
+
+#nav > li {
+display: inline-block;
+}
+
+#nav li {
+position: relative;
+}
+
+#nav > li > a {
+text-transform: uppercase;
+color: #fff;
+}
+
+#nav li a {
+display: inline-block;
+line-height: 46px;
+text-decoration: none;
+padding: 0 24px;
+}
+
+#nav li:hover .subnav {
+display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+color: #000;
+background-color: #ccc;
+}
+
+#nav .subnav {
+display: none;
+position: absolute;
+background-color: #fff;
+
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+/* căn cứng */
+top: 46px;
+left: 0;
+}
+
+#nav .subnav a {
+color: #000;
+width: 100%;
+}
+
+#nav .nav-arrow-down {
+font-size: 14px;
+}
+
+#header .search-btn {
+
+
+float: right;
+padding: 0 21px;
+}
+
+#header .search-btn:hover {
+cursor: wait;
+background-color: #f44336;
+/* Thằng này là vùng không gian xung quanh icon
+Nó có màu đỏ khi di chuột vào */
+}
+
+#header .search-icon {
+/* thằng này chính là css cái icon kính lúp */
+color: #fff;
+font-size: 20px;
+
+line-height: 46px;
+}
+
+#slider {
+margin-top: 46px;
+min-height: 500px;
+background-color: #333;
+}
+
+
+
 
