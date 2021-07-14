@@ -33,7 +33,7 @@
 
            <!-- Begin:Search -->
            <div class="search-btn">
-               <i class="search-icon fa fa-search"></i>
+               <i class="search-icon fa fa-search text-white"></i>
            </div>
            <!-- End:Search -->
 
@@ -41,7 +41,7 @@
        </div>
 
        <div id="slider">
-        <div class="text-content">
+        <div class="text-content text-white">
             <h2 class="text-heading">Los Angeles</h2>
             <p class="text-description">We had the best time playing at Venice Beach!</p>
         </div>
@@ -71,16 +71,88 @@
                 </div>
             </div>
            <!-- Tour Section -->
-           <div class="content-section">
-                 <h2 class="section-heading">TOUR DATES</h2>
-                 <p class="section-sub-section">Remember to book your tickets!</p>
+           <div class="tour-section">
+               <div class="content-section ">
+                     <h2 class="section-heading text-white" >TOUR DATES</h2>
+                     <p class="section-sub-section text-white">Remember to book your tickets!</p>
+                     <!-- tickets -->
+                     <div class="tickets-list">
+                         <li>September 
+                             <span class="sold-out">Sold out</span>
+                         </li>
+                         <li>October 
+                            <span class="sold-out">Sold out</span></li>
+                         <li>November
+                             <span class="quality">3</span>
+                         </li>
+                     </div>
+                     <!-- places -->
+                     <div class="row places-list">
+                         <div class="places-item">
+                            <img class="place-img" src="./assets/img/places/newyork.jpg" alt="New York">
+                            <div class="place-body">
+                                <h3 class="place-heading">New York</h3>
+                                <p class="place-time">Fri 27 Nov 2016</p>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <a href="#" class="place-buy-btn">Buy Ticket</a>
+                            </div>
+                         </div>
+                         
+                         <div class="places-item">
+                            <img class="place-img" src="./assets/img/places/paris.jpg" alt="New York">
+                            <div class="place-body">
+                                <h3 class="place-heading">Paris</h3>
+                                <p class="place-time">Sat 28 Nov 2016</p>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <a href="#" class="place-buy-btn">Buy Ticket</a>
+                            </div>
+                         </div>
 
-                
-            </div>
+                         <div class="places-item">
+                            <img class="place-img" src="./assets/img/places/sanfran.jpg" alt="New York">
+                            <div class="place-body">
+                                <h3 class="place-heading">San Francisco</h3>
+                                <p class="place-time">Sun 29 Nov 2016</p>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <a href="#" class="place-buy-btn">Buy Ticket</a>
+                            </div>
+                         </div>
+                         <!-- <div class="clear"></div> -->
+                     </div>
+                </div>
+           </div>
             <!-- Contact Section -->
             <div class="content-section">
                 <h2 class="section-heading"> CONTACT</h2>
                 <p class="section-sub-section">Fan? Drop a note!</p>
+
+                <div class="row contact-content">
+                    <div class="col col-half contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i>Chicago, US</p>
+                        <p><i class="fas fa-phone-alt"></i>Phone: +00 151515</p>
+                        <p><i class="fas fa-envelope"></i>Email: mail@mail.com</p>
+                    </div>
+                    <div class="col col-half contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-half">
+                                    <input type="text" name="" id="" required placeholder="Name" class="form-control">
+                                </div>
+                                <div class="col col-half">
+                                    <input type="email" name="" id="" required placeholder="Email" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row mt-8">
+                                <div class="col col-full">
+                                    <input type="text" name="" id="" required placeholder="Message" class="form-control-full">
+
+                                </div>
+                            </div>
+                            <input class="form-submit-btn mt-16" type="submit" value="SEND">
+                        </form>
+                    </div>
+                </div>
+
  
                 
             </div>

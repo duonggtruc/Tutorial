@@ -4,14 +4,45 @@
     margin: 0;
     box-sizing: content-box;
 }
+/* commom */
 .clear{
     clear: both;
 }
-html{
-    font-family:Arial, Helvetica, sans-serif ;
+
+.text-white{
+    color: #fff !important;
 }
+html{
+    font-family: "Lato", sans-serif !important;
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+    display: flex;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-third{
+    width: 33.33333%;
+}
+.col-half{
+    width:50%;
+} 
+.col-full{
+    width: 100%;
+}
+.mt-8{
+    margin-top: 8px !important;
+}
+.mt-16{
+    margin-top: 16px;
+}
+/* main */
 #main {
-/* background-color: #000; */
+
 }
 #header {
     height: 46px;
@@ -78,7 +109,7 @@ html{
 }
 
 #header .search-icon{
-    color:#fff;
+    /* color:#fff; */
     position: relative;
     left:0;
     line-height:46px;
@@ -98,7 +129,7 @@ html{
 }
 #slider .text-content{
     position: absolute;
-    color:#fff;
+    /* color:#fff; */
     bottom: 48px;
     /* cách 1
     left: 50%;
@@ -167,6 +198,125 @@ html{
     margin-top: 15px;
     border-radius: 4px;
 }
+.row::after{
+    content: "";
+    display:block;
+    clear: both;
+}
+/* tour section */
+.tour-section{
+    background-color: #000;
+}
+.tickets-list{
+    background-color: #fff;
+}
+.tickets-list li{
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom:1px #ddd solid;
+    list-style-type: none;
+    color:#757575;
+}
+.sold-out{
+    background-color: #f44336;
+    color: #fff;
+    margin-left: 16px;
+    padding: 4px 8px;
+}
+.quality{
+    background-color: #000;
+    color:#fff;
+    border-radius: 50%;
+    padding: 4px 8px;
+    float:right;
+    margin-right: 16px;
+    margin-top: -3px;
+}
+.places-list{
+    /* margin-top:32px;
+    margin-left: -8px;
+    margin-right: -8px; */
+    /* margin: 32px -8px 48 px; */
+    margin-top: 32px;
+    margin-bottom: 48px;
+}
+.places-item{
+    float:left;
+    width: 33.33333%;
+    padding:0 8px;
+    box-sizing: border-box;
+    
+}
+.place-body{
+    background-color: #fff;
+    font-size: 15px;
+    padding: 16px;
+}
+.place-heading{
+    font-size:15px;
+    font-weight: bolder;
+   
+}
+.place-time{
+    margin-top: 15px;
+    opacity:0.6 ;
+}
+.place-img{
+    width: 100%;
+    display:block;
+}
+.place-img:hover{
+    opacity:0.6;
+}
+.place-desc{
+    margin-top: 15px;
+    line-height: 1.4;
+}
+.place-buy-btn{
+    display: inline-block;
+   color: #fff;
+   background-color: #000;
+   text-decoration: none;
+   padding: 11px 16px;
+   margin-top:15px;
+} 
+.place-buy-btn:hover{
+    background-color: #ccc;
+    color:#000;
+}
+.contact-content{
+    margin: 48px;
+}
+.contact-info{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.contact-info i[class*="fas fa-"]{
+    width: 30px;
+    display: inline-block;
+} 
+.contact-form{
+    font-size: 15pxx;
+}
+.form-control{
+    padding:10px;
+    border: 1px solid #ccc;
+    /* width: 100%; */
+}
+.form-control-full{
+    padding:10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.contact-form .form-submit-btn{
+    font-size: 15px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    padding: 9px 14px;
+    float:right;
+}
+
 #footer {
 
 }
